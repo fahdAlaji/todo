@@ -46,7 +46,7 @@ class Login extends StatelessWidget {
                 decoration: const InputDecoration(
                   suffixIcon: Icon(
                     Icons.email,
-                    color: Colors.purpleAccent,
+                    color: Color.fromARGB(255, 211, 166, 219),
                   ),
                   border: OutlineInputBorder(),
                 ),
@@ -70,7 +70,7 @@ class Login extends StatelessWidget {
                 decoration: const InputDecoration(
                   suffixIcon: Icon(
                     Icons.key,
-                    color: Colors.purpleAccent,
+                    color: Color.fromARGB(255, 211, 166, 219),
                   ),
                   border: OutlineInputBorder(),
                 ),
@@ -93,19 +93,19 @@ class Login extends StatelessWidget {
               ),
               child: SizedBox(
                   width: 300,
-                  height: 30,
+                  height: 50,
                   child: ElevatedButton(
                     style: const ButtonStyle(
                         backgroundColor:
-                            MaterialStatePropertyAll(Colors.purpleAccent)),
+                            MaterialStatePropertyAll(Color.fromARGB(255, 201, 90, 220))),
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const Home()),
+                        MaterialPageRoute(builder: (context) =>  Home()),
                       );
                     },
                     child: const Text(
-                      "LOGIN",
+                      "LOG IN",
                       style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
                   )),

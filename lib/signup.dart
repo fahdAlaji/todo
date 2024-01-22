@@ -88,46 +88,39 @@ TextEditingController emailcontroller = TextEditingController();
                   child: ElevatedButton(
                     style: const ButtonStyle(
                         backgroundColor:
-                            MaterialStatePropertyAll(Colors.purpleAccent)),
+                            MaterialStatePropertyAll(Color.fromARGB(255, 201, 90, 220))),
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const Home()),
+                        MaterialPageRoute(builder: (context) =>  Home()),
                       );
                     },
                     child: const Text(
-                      "Sinup",
+                      "Sign up",
                       style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
                   )),
             ),
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(
-                      top: 20, left: 20, bottom: 50, right: 100),
-                  child: Text("Forgot password?"),
-                ),
-              ],
-            ),
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                    width: 80,
-                    child: Divider(
-                      color: Colors.grey,
-                      thickness: 1,
-                    )),
-                Text("OR"),
-                SizedBox(
-                    width: 80,
-                    child: Divider(
-                      color: Colors.grey,
-                      thickness: 1,
-                    )),
-              ],
+             const Padding( 
+              padding: EdgeInsets.only(top: 50, bottom: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                      width: 80,
+                      child: Divider(
+                        color: Colors.grey,
+                        thickness: 1,
+                      )),
+                  Text("OR"),
+                  SizedBox(
+                      width: 80,
+                      child: Divider(
+                        color: Colors.grey,
+                        thickness: 1,
+                      )),
+                ],
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -154,13 +147,13 @@ TextEditingController emailcontroller = TextEditingController();
             ),
              Row(mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('Already a user?'),
+                const Text('Already a user?'),
                 TextButton(onPressed: () {
                    Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) =>  Login()),
                       );
-                }, child: Text("LOGIN",style: TextStyle(color: Colors.black),))
+                }, child: const Text("LOGIN",style: TextStyle(color: Colors.black),))
               ],
             )
           ],
