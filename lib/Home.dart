@@ -57,7 +57,6 @@ class _HomeState extends State<Home> {
       }
     });
 
-    print(tasksList[0].title);
   }
 
   Widget build(BuildContext context) {
